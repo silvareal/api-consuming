@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static "css\base.css" %}" />
+    <script src="main.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <h1 style="text-align:center"><span style="color:goldenrod">SILVA</span> DJANGO <span style="color:rgb(141, 103, 8)">API-CALL</span></h1>
+    <nav class="flex-nav">
+        <ul>
+            <li>
+                <a href="{% url 'map' %}">map</a>
+            </li>
+            <li>
+                <a href="{% url 'github' %}">github user</a>
+            </li>
+            <li>
+                <a href="{% url 'dictionary' %}">dictionary</a>
+            </li>
+        </ul>
+    </nav>
+
+
+<section class="main">
+    {% block content %}
+    {% endblock %}
+</section>
+
+<footer style="background-color: rgba(0,0,0,0.2); color: white;">
+    <p style="font-weight:500; padding: 20px;">2018 reserved by sylvernus</p>
+</footer>
+
+</div>
+</body>
+</html>
