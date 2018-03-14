@@ -33,7 +33,7 @@ SECRET_KEY = config('SECRET_KEY', default='')
 DEBUG = config('DEBUG',default='True', cast=bool)
 
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS',default='search-apii.herokuapp.com' cast=Csv())
+ALLOWED_HOSTS = config('ALLOWED_HOSTS',default='search-apii.herokuapp.com', cast=Csv())
 
 
 
