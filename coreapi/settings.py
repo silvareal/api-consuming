@@ -28,7 +28,7 @@ OXFORD_APP_KEY = config('OXFORD_APP_KEY', default='')
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('SECRET_KEY', default='')
-'=d8b(9%7o%w5m5z1qvzr2dbdo7#aei==q*i6h%+rk_h2f&(p)t'
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool)
 
