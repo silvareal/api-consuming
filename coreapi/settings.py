@@ -30,7 +30,7 @@ OXFORD_APP_KEY = config('OXFORD_APP_KEY', default='')
 SECRET_KEY = config('SECRET_KEY', default='')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', cast=bool)
+DEBUG = config('DEBUG',default='True', cast=bool)
 
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
