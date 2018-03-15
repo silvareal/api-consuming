@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 
+{% block title %}
+ {{ block.super }}||github api
+{% endblock %}
 
 {% block content %}
   <h2>GitHub API</h2>
@@ -15,7 +18,7 @@
       <strong>{{ search_result.public_repos }}</strong> public repositories.</br>
       <strong>{{ search_result.followers }}</strong> followers.
     </p>
-    <img width="50%" height="50%" style="max_width=100px" src="{{ search_result.avatar_url }}" />
+    <img width="50%" height="50%" style="max-width: 800px;" src="{{ search_result.avatar_url }}" />
   {% else %}
     <p><em>{{ search_result.message }}</em></p>
   {% endif %}
