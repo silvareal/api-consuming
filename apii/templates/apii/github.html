@@ -12,7 +12,8 @@
   {% if search_result.success %}
     <p>
       <strong>{{ search_result.name|default_if_none:search_result.login }}</strong> has
-      <strong>{{ search_result.public_oreps }}</strong> public repositories.
+      <strong>{{ search_result.public_repos }}</strong> public repositories.</br>
+      <strong>{{ search_result.followers }}</strong> followers.
     </p>
     <img width="50%" height="50%" style="max_width=100px" src="{{ search_result.avatar_url }}" />
   {% else %}
