@@ -8,12 +8,14 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="{% static "css\base.css" %}" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
     <script src="main.js"></script>
 </head>
 <body>
 <div class="wrap">
     <h1 style="text-align:center"><span style="color:goldenrod">SILVA</span> DJANGO <span style="color:rgb(141, 103, 8)">API-CALL</span></h1>
     <nav class="flex-nav">
+        <a href="#" class="togglenav"><i class="fa fa-align-justify"></i>Menu</a>
         <ul>
             <li>
                 <a href="{% url 'map' %}">map</a>
@@ -38,5 +40,16 @@
 </footer>
 
 </div>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script>
+    $(function() {
+        $('.togglenav').on('click', function() {
+            $('.flex-nav ul').toggleClass('open')
+        });
+    });
+</script>
 </body>
 </html>
