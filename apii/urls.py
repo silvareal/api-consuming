@@ -4,5 +4,6 @@ from . import views
 urlpatterns = [
     path('map', views.home, name='map'),
     path('github', views.github, name='github'),
-    path('dictionary', views.oxford, name='dictionary')
+    path('dictionary', views.oxford, name='dictionary'),
+    path('', views.base, name='base')
 ]
