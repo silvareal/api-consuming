@@ -34,7 +34,7 @@ body {
 li {
     list-style: none;
 }
-.flex-nav a:link {
+ a {
     background: rgba(0,0,0,0.2);
     color: black;
     text-decoration: none;
@@ -67,10 +67,39 @@ li {
 
 .flex-nav li {
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 200px;
-            flex: 1 1 200px;
+    -ms-flex: 1 1 33.333333%;
+    flex: 1 1 33.333333%;
 }
 
+.togglenav {
+    display: none;
+    float: left;
+}
+
+@media all and (max-width:800px) {
+    .flex-nav ul {
+        flex-wrap: wrap;
+    }
+
+    .flex-nav li{
+        flex: 1 1 100%
+    }
+
+    .togglenav {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    
+    .flex-nav ul {
+        display: none;
+        margin: 5px 10px 10px 10px;
+    }
+
+    .flex-nav ul.open {
+        display: flex;
+    }
+}
 ::-moz-selection {
     background: #FFF5B8;
 }
