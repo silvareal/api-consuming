@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    min-height: 100vh;
     padding: 0;
     margin: 0;
 }
@@ -34,7 +35,7 @@ body {
 li {
     list-style: none;
 }
- a {
+a {
     background: rgba(0,0,0,0.2);
     color: black;
     text-decoration: none;
@@ -54,6 +55,10 @@ li {
     background: rgba(0,0,0,0.5);
 }
 
+footer {
+    bottom: 0;
+}
+
 .flex-nav ul{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -62,7 +67,7 @@ li {
     margin: 0px;
     padding: 0px;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .flex-nav li {
