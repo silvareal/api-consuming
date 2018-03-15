@@ -70,3 +70,6 @@ def oxford(request):
     else:
         form = DictionaryForm()
     return render(request, 'apii/oxford.html', {'form': form, 'search_result': search_result})
+
+def base(request):
+    return render(request, 'apii/mainindex.html')
